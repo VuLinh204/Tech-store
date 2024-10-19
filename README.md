@@ -14,7 +14,7 @@ dừng -> docker-compose down
 
 ---
 
-front end
+front end (Nhớ cài node_module -> npm i)
 
 cd Tech-store\frontend
 npm start -> bật
