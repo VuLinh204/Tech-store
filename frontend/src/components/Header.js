@@ -1,6 +1,6 @@
 import React from 'react';
-import './Header.css';
-//img
+import '../assets/css/header.css';
+
 import qrCode from '../assets/img/qr_code.png';
 import googlePlay from '../assets/img/google_play.png';
 import appStore from '../assets/img/app_store.png';
@@ -53,24 +53,9 @@ const Header = ({ currentUser, carts, searchHistory }) => {
                                         <h3>Thông báo mới nhận</h3>
                                     </header>
                                     <ul className="header__notify-list">
-                                        {/* Thay thế bằng dữ liệu thông báo thực tế */}
-                                        {['Thông báo 1', 'Thông báo 2'].map((notify, index) => (
-                                            <li key={index} className="header__notify-item header__notify-item--viewed">
-                                                <a href="#" className="header__notify-link">
-                                                    <img
-                                                        src="https://via.placeholder.com/50"
-                                                        alt=""
-                                                        className="header__notify-img"
-                                                    />
-                                                    <div className="header__notify-info">
-                                                        <span className="header__notify-name">{notify}</span>
-                                                        <span className="header__notify-description">
-                                                            Mô tả thông báo
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        ))}
+                                        <li>Thông báo1</li>
+                                        <li>Thông báo2</li>
+                                        <li>Thông báo3</li>
                                     </ul>
                                     <footer className="header__notify-footer">
                                         <a href="#" className="header__notify-footer-btn">
