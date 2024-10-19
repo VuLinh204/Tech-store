@@ -1,11 +1,14 @@
-# Sử dụng image PHP chính thức
+# Sử dụng PHP hình ảnh với Apache
 FROM php:8.0-apache
 
-# Kích hoạt mod_rewrite cho Apache
-RUN a2enmod rewrite
+# Cài đặt các phần mở rộng PHP cần thiết
+RUN docker-php-ext-install pdo pdo_mysql
 
-# Copy mã nguồn vào thư mục gốc của Apache
-COPY public/ /var/www/html/
+# Copy mã nguồn vào container
+COPY . /var/www/html/
 
-# Thiết lập quyền truy cập cho thư mục
-RUN chown -R www-data:www-data /var/www/html
+# Cấp quyền cho các tệp tin
+RUN chown -R www-data:www-data /var/www/html/
+
+# Expose port 80
+EXPOSE 80

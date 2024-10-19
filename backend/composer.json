@@ -1,0 +1,20 @@
+{
+    "name": "tech-store/backend",
+    "description": "Backend for Tech-store project",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^7.9"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TechStore\\Backend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "stable"
+        }
+    ],
+    "minimum-stability": "stable"
+}

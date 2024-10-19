@@ -11,3 +11,11 @@ CáCh 2: Không tạo các image
 start -> docker-compose start (8080) nhớ sửa trong docker-compose yml
 
 dừng -> docker-compose down
+
+---
+
+front end
+
+cd Tech-store\frontend
+npm start -> bật
+ctr C tắt
