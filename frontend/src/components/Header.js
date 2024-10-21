@@ -1,5 +1,5 @@
 import React from 'react';
-import Cart from './Cart';
+import HeaderCart from './HeaderCart';
 
 import '../assets/css/Header.css';
 import qrCode from '../assets/img/qr_code.png';
@@ -69,16 +69,16 @@ const Header = () => {
                             <span className="header__navbar-user-name">abc</span>
                             <ul className="header__navbar-user-menu">
                                 <li className="header__navbar-user-item">
-                                    <a href="#">Tài Khoản Của Tôi</a>
+                                    <a href="/profile">Tài Khoản Của Tôi</a>
                                 </li>
                                 <li className="header__navbar-user-item">
-                                    <a href="#">Mật Khẩu</a>
+                                    <a href="/password">Mật Khẩu</a>
                                 </li>
                                 <li className="header__navbar-user-item">
-                                    <a href="/user/purchase">Đơn Mua</a>
+                                    <a href="/orderList">Đơn Mua</a>
                                 </li>
                                 <li className="header__navbar-user-item">
-                                    <a href="/user/voucher">Mã Giảm Giá</a>
+                                    <a href="/voucher">Mã Giảm Giá</a>
                                 </li>
                                 <li className="header__navbar-user-item">
                                     <a href="/signout">Đăng Xuất</a>
@@ -134,7 +134,7 @@ const Header = () => {
                             <i className="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
-                    <Cart />
+                    <HeaderCart />
                 </div>
             </div>
         </header>

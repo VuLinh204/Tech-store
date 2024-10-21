@@ -11,7 +11,7 @@ const Register = () => {
 
         // Gửi thông tin đăng ký tới backend
         try {
-            const response = await fetch('/signup/send', {
+            const response = await fetch('/register/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const Register = () => {
                         <div className="auth-form__container">
                             <div className="auth-form__header">
                                 <h3 className="auth-form__heading">Đăng ký</h3>
-                                <a href="/signin" className="auth-form__switch-btn">
+                                <a href="/login" className="auth-form__switch-btn">
                                     Đăng nhập
                                 </a>
                             </div>
@@ -118,7 +118,7 @@ const Register = () => {
                                 </p>
                             </div>
                             <div className="auth-form__controls">
-                                <a href="/signin" className="btn btn--normal auth-form__controls-back">
+                                <a href="/login" className="btn btn--normal auth-form__controls-back">
                                     TRỞ LẠI
                                 </a>
                                 <button type="submit" className="btn btn--primary">

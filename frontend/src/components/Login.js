@@ -12,7 +12,7 @@ const Login = () => {
 
         // Gửi thông tin đăng nhập tới backend
         try {
-            const response = await fetch('/signin', {
+            const response = await fetch('/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ const Login = () => {
                         <div className="auth-form__container">
                             <div className="auth-form__header">
                                 <h3 className="auth-form__heading">Đăng nhập</h3>
-                                <a href="/signup" className="auth-form__switch-btn">
+                                <a href="/register" className="auth-form__switch-btn">
                                     Đăng ký
                                 </a>
                             </div>

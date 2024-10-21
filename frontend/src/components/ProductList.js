@@ -53,7 +53,7 @@ const ProductList = (/*{ product }*/) => {
 
                     return (
                         <div key={product.id} className="grid__column-2-4">
-                            <a className="home-product-item" href={`/product/${product.id}`}>
+                            <a className="home-product-item" href={`/productDetail/${product.id}`}>
                                 <div
                                     className="home-product-item__img"
                                     style={{ backgroundImage: `url(assets/img/${product.image})` }}
