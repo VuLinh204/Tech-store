@@ -6,6 +6,10 @@ const categories = [
     { id: 4, name: 'Phụ kiện', image: 'category3.png' },
     { id: 5, name: 'Màn hình', image: 'category3.png' },
     { id: 6, name: 'Tai nghee', image: 'category3.png' },
+    { id: 7, name: 'Ghế', image: 'category3.png' },
+    { id: 8, name: 'Chuột', image: 'category3.png' },
+    { id: 9, name: 'Bàn phím', image: 'category3.png' },
+    { id: 10, name: 'Camera', image: 'category3.png' },
 ];
 
 const CategoryList = (/*{ categories }*/) => {
