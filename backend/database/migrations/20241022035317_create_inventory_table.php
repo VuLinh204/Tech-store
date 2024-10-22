@@ -20,8 +20,7 @@ final class CreateInventoryTable extends AbstractMigration
     public function change(): void
     {
         $table = $this->table('inventory');
-        $table
-            ->addColumn('product_id', 'integer', ['null' => false])
+        $table->addColumn('product_id', 'integer', ['null' => false, 'signed' => false])
             ->addForeignKey('product_id', 'product', 'id', ['delete' => 'CASCADE', 'update' => 'NO_ACTION'])
             ->addColumn('stock_quantity', 'integer', ['null' => false])
             ->addColumn('sold_quantity', 'integer', ['null' => false, 'default' => 0])

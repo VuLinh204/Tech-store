@@ -21,11 +21,11 @@ final class CreateOrderTable extends AbstractMigration
     {
         $table = $this->table('order');
         $table
-            ->addColumn('user_id', 'integer', ['null' => false])
+            ->addColumn('user_id', 'integer', ['null' => false, 'signed' => false])
             ->addForeignKey('user_id', 'user', 'id', ['delete' => 'CASCADE', 'update' => 'NO_ACTION'])
             ->addColumn('order_date', 'datetime', ['null' => false, 'default' => 'CURRENT_TIMESTAMP'])
-            ->addColumn('status', 'tinyint')
-            ->addColumn('discount_id', 'integer', ['null' => true])
+            ->addColumn('status', 'integer', ['limit' => 10])
+            ->addColumn('discount_id', 'integer', ['null' => true, 'signed' => false])
             ->addForeignKey('discount_id', 'discount', 'id', ['delete' => 'SET_NULL', 'update' => 'NO_ACTION'])
             ->addTimestamps()
             ->create();

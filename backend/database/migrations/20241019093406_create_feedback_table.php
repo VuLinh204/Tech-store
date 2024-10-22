@@ -20,10 +20,9 @@ final class CreateFeedbackTable extends AbstractMigration
     public function change(): void
     {
         $table = $this->table('feedback');
-        $table
-            ->addColumn('user_id', 'integer', ['null' => false])
+        $table->addColumn('user_id', 'integer', ['null' => false, 'signed' => false])
             ->addForeignKey('user_id', 'user', 'id', ['delete' => 'CASCADE', 'update' => 'NO_ACTION'])
-            ->addColumn('product_id', 'integer', ['null' => false])
+            ->addColumn('product_id', 'integer', ['null' => false, 'signed' => false])
             ->addForeignKey('product_id', 'product', 'id', ['delete' => 'CASCADE', 'update' => 'NO_ACTION'])
             ->addColumn('comment', 'text', ['null' => false])
             ->addColumn('rating', 'integer', ['limit' => 6, 'null' => false])

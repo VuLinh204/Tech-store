@@ -25,7 +25,7 @@ final class CreateUsersTable extends AbstractMigration
             ->addColumn('phone_number', 'string', ['limit' => 15, 'null' => false])
             ->addColumn('address', 'string', ['limit' => 500, 'null' => false])
             ->addColumn('password', 'string', ['limit' => 255, 'null' => false])
-            ->addColumn('role_id', 'integer', ['null' => false])
+            ->addColumn('role_id', 'integer', ['null' => false, 'signed' => false])
             ->addForeignKey('role_id', 'role', 'id', ['delete' => 'CASCADE', 'update' => 'NO_ACTION'])
             ->addColumn('deleted_at', 'timestamp', ['default' => null, 'null' => true])
             ->addTimestamps()

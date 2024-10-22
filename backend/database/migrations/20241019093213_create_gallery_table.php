@@ -21,9 +21,8 @@ final class CreateGalleryTable extends AbstractMigration
     {
         $table = $this->table('gallery');
 
-        $table
-            ->addColumn('thumbnail', 'string', ['limit' => 500, 'null' => false])
-            ->addColumn('product_id', 'integer', ['null' => false])
+        $table->addColumn('thumbnail', 'string', ['limit' => 500, 'null' => false])
+            ->addColumn('product_id', 'integer', ['null' => false, 'signed' => false])
             ->addForeignKey('product_id', 'product', 'id', ['delete' => 'CASCADE', 'update' => 'NO_ACTION'])
             ->addTimestamps()
             ->create();

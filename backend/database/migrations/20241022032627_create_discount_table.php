@@ -20,8 +20,7 @@ final class CreateDiscountTable extends AbstractMigration
     public function change(): void
     {
         $table = $this->table('discount');
-        $table
-            ->addColumn('code', 'string', ['limit' => 255, 'null' => false, 'unique' => true])
+        $table->addColumn('code', 'string', ['limit' => 255, 'null' => false])
             ->addColumn('discount_percentage', 'decimal', ['precision' => 5, 'scale' => 2, 'null' => false])
             // ngày bắt đầu có hiệu lực
             ->addColumn('valid_from', 'datetime')
