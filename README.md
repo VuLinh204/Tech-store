@@ -16,6 +16,12 @@ dừng -> docker-compose down
 
 front end (Nhớ cài node_module -> npm i)
 
+npm install react-router-dom
+
+npm install @fortawesome/fontawesome-free
+
+npm install axios
+
 cd Tech-store\frontend
 npm start -> bật
 ctr C tắt
