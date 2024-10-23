@@ -3,7 +3,8 @@
     "description": "Backend for Tech-store project",
     "type": "project",
     "require": {
-        "guzzlehttp/guzzle": "^7.9"
+        "guzzlehttp/guzzle": "^7.9",
+        "robmorgan/phinx": "^0.16.5"
     },
     "license": "MIT",
     "autoload": {
