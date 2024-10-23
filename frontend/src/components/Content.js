@@ -2,6 +2,7 @@ import React from 'react';
 import '../assets/css/Content.css';
 import CategoryList from './CategoryList';
 import ProductList from './ProductList';
+import FlashSale from './FlashSale';
 
 function Content() {
     return (
@@ -30,6 +31,20 @@ function Content() {
                                 height: '50px',
                             }}
                         >
+                            FlashSale
+                        </div>
+
+                        <FlashSale/>
+
+                        <div
+                            style={{
+                                color: 'var(--primary-color)',
+                                fontSize: '3rem',
+                                textAlign: 'center',
+                                height: '50px',
+                            }}
+                        >
+
                             Gợi ý hôm nay
                         </div>
                         <hr style={{ backgroundColor: 'var(--primary-color)', border: 0, height: '10px' }} />

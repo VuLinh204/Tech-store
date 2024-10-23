@@ -96,7 +96,7 @@ const Header = () => {
                             ></i>
                             <svg className="header__logo-img" viewBox="0 0 200 50">
                                 <text x="12" y="40" fontFamily="Arial, sans-serif" fontSize="36" fill="#74C0FC">
-                                    GenZ Store
+                                    Tech Store
                                 </text>
                             </svg>
                         </a>
