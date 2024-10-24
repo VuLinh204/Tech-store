@@ -14,6 +14,11 @@ dừng -> docker-compose down
 
 ---
 
+database:
+composer require robmorgan/phinx
+
+---
+
 front end (Nhớ cài node_module -> npm i)
 
 npm install react-router-dom
