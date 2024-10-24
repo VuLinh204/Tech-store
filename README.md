@@ -17,6 +17,11 @@ dừng -> docker-compose down
 database:
 composer require robmorgan/phinx
 
+lệnh chạy database:
+vendor/bin/phinx migrate
+
+vendor/bin/phinx seed:run
+
 ---
 
 front end (Nhớ cài node_module -> npm i)
