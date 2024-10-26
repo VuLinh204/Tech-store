@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use Phinx\Seed\AbstractSeed;
 
-class Role extends AbstractSeed
+class ColorSeeder extends AbstractSeed
 {
     /**
      * Run Method.
@@ -17,10 +17,13 @@ class Role extends AbstractSeed
     public function run(): void
     {
         $data = [
-            [
-                'name' => 'Quản trị viên tối cao'
-            ]
+            ['name' => 'Đen'],
+            ['name' => 'Trắng'],
+            ['name' => 'Xám'],
+            ['name' => 'Đỏ'],
+            ['name' => 'Xanh'],
         ];
-        $this->table('role')->insert($data)->saveData();
+
+        $this->table('colors')->insert($data)->saveData();
     }
 }
