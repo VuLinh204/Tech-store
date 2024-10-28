@@ -24,6 +24,6 @@ class ColorSeeder extends AbstractSeed
             ['name' => 'Xanh'],
         ];
 
-        $this->table('colors')->insert($data)->saveData();
+        $this->table('color')->insert($data)->saveData();
     }
 }
