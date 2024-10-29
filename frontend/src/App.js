@@ -25,7 +25,7 @@ import Payment from './components/Payment';
 function App() {
     return (
         <Router>
-            <div className="App">
+            <div className="app">
                 <Header />
                 <Routes>
                     <Route path="/" element={<Main />} />
