@@ -15,7 +15,7 @@ const CategoryList = () => {
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:82/tech-store/backend/views/getCategories.php"
+          "http://localhost:82/tech-store/backend/api/getCategories.php"
         );
         setCategories(response.data.slice(0, 10));
       } catch (error) {
@@ -30,8 +30,8 @@ const CategoryList = () => {
     const fetchProducts = async () => {
       try {
         const url = selectedCategory
-          ? `http://localhost:82/tech-store/backend/views/getProducts.php?category_id=${selectedCategory}`
-          : "http://localhost:82/tech-store/backend/views/getProducts.php";
+          ? `http://localhost:82/tech-store/backend/api/getProducts.php?category_id=${selectedCategory}`
+          : "http://localhost:82/tech-store/backend/api/getProducts.php";
 
         const response = await axios.get(url);
         let productData = Array.isArray(response.data) ? response.data : [];

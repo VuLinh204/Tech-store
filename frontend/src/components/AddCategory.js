@@ -16,7 +16,7 @@ const AddCategory = ({ onAddSuccess }) => {
 
     try {
       const response = await fetch(
-        "http://localhost:82/Tech-store/backend/views/addCategory.php",
+        "http://localhost:82/Tech-store/backend/api/addCategory.php",
         {
           method: "POST",
           headers: {
@@ -28,9 +28,9 @@ const AddCategory = ({ onAddSuccess }) => {
           }),
         }
       );
-    
+
       const data = await response.json();
-    
+
       if (response.ok && data.success) {
         setMessage("Category created successfully!");
         setName("");

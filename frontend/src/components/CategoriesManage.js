@@ -18,7 +18,7 @@ const CategoriesManage = () => {
   const fetchCategories = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:82/tech-store/backend/views/getCategories.php"
+        "http://localhost:82/tech-store/backend/api/getCategories.php"
       );
       setCategories(response.data);
     } catch (error) {
@@ -28,10 +28,7 @@ const CategoriesManage = () => {
 
   const addCategory = async (newCategory) => {
     try {
-      await axios.post(
-        "http://localhost:82/views/addCategory.php",
-        newCategory
-      );
+      await axios.post("http://localhost:82/api/addCategory.php", newCategory);
       fetchCategories();
     } catch (error) {
       console.error("Lỗi khi thêm danh mục:", error);
@@ -41,7 +38,7 @@ const CategoriesManage = () => {
   const updateCategory = async (updatedCategory) => {
     try {
       await axios.put(
-        "http://localhost:82/views/updateCategory.php",
+        "http://localhost:82/api/updateCategory.php",
         updatedCategory
       );
       fetchCategories();
@@ -59,7 +56,7 @@ const CategoriesManage = () => {
       try {
         await axios({
           method: "post",
-          url: "http://localhost:82/tech-store/backend/views/deleteCategory.php",
+          url: "http://localhost:82/tech-store/backend/api/deleteCategory.php",
           headers: {
             "Content-Type": "application/json",
           },
