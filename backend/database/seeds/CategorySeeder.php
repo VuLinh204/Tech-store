@@ -18,7 +18,6 @@ class CategorySeeder extends AbstractSeed
     {
         $data = [
             [
-<<<<<<< HEAD
                 'name' => 'Electronics',
                 'thumbnail' => 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MTB8MHwxfGFsbHwxfHx8fHx8fHwxNjQ1OTQ0MDE4&ixlib=rb-1.2.1&q=80&w=400',
             ],
@@ -66,28 +65,5 @@ class CategorySeeder extends AbstractSeed
 
 
         $this->table('category')->insert($data)->saveData();
-=======
-                'name' => 'Điện thoại',
-                'thumbnail' => 'dien_thoai.jpg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            [
-                'name' => 'Laptop',
-                'thumbnail' => 'laptop.jpg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            [
-                'name' => 'Phụ kiện',
-                'thumbnail' => 'phu_kien.jpg',
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ]
-        ];
-
-        $table = $this->table('category');
-        $table->insert($data)->saveData();
->>>>>>> origin/main
     }
 }

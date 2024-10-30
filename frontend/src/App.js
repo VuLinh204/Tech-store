@@ -25,7 +25,6 @@ import CategoriesManage from "./components/CategoriesManage";
 import ControlPanel from "./components/ControlPanel";
 
 function App() {
-<<<<<<< HEAD
   return (
     <Router>
       <div className="App">
@@ -51,31 +50,6 @@ function App() {
       </div>
     </Router>
   );
-=======
-    return (
-        <Router>
-            <div className="app">
-                <Header />
-                <Routes>
-                    <Route path="/" element={<Main />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/profile" element={<Profile />} />
-                    <Route path="/orderList" element={<OrderList />} />
-                    <Route path="/voucher" element={<VoucherList />} />
-                    <Route path="/order" element={<Order />} />
-                    <Route path="/password" element={<Password />} />
-                    <Route path="/register" element={<Register />} />
-                    <Route path="/forgot_password" element={<ForgotPassword />} />
-                    <Route path="/productDetail/:id" element={<ProductDetail />} />
-                    <Route path="/categories" element={<CategoryList />} />
-                    <Route path="/cart" element={<Cart />} />
-                    <Route path="/payment" element={<Payment />} />
-                </Routes>
-                <Footer />
-            </div>
-        </Router>
-    );
->>>>>>> origin/main
 }
 
 export default App;
