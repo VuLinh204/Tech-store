@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/Content.css';
+import '../assets/css/HomeProduct.css';
 import CategoryList from './CategoryList';
 import ProductList from './ProductList';
 import FlashSale from './FlashSale';
@@ -34,7 +34,7 @@ function Content() {
                             FlashSale
                         </div>
 
-                        <FlashSale/>
+                        <FlashSale />
 
                         <div
                             style={{
@@ -44,10 +44,8 @@ function Content() {
                                 height: '50px',
                             }}
                         >
-
                             Gợi ý hôm nay
                         </div>
-                        <hr style={{ backgroundColor: 'var(--primary-color)', border: 0, height: '10px' }} />
 
                         <ProductList />
 
@@ -67,6 +65,8 @@ function Content() {
                                 &gt;{' '}
                             </a>
                         </div>
+
+                        <hr style={{ backgroundColor: 'var(--primary-color)', border: 0, height: '10px' }} />
                     </div>
                 </div>
             </div>

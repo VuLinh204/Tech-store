@@ -361,6 +361,7 @@ li.sidebar__menu-item {
   color: #666;
 }
 
+<<<<<<< HEAD
 /* FlashSale item */
 .home-product-sale {
   position: relative;
@@ -368,6 +369,8 @@ li.sidebar__menu-item {
   margin-bottom: 5rem;
 }
 
+=======
+>>>>>>> origin/main
 .slider-controls {
   position: absolute;
   top: 50%;
@@ -387,6 +390,7 @@ li.sidebar__menu-item {
   font-size: 1.5rem;
 }
 
+<<<<<<< HEAD
 .home-product-sale-container {
   display: flex;
   overflow-x: auto;
@@ -405,6 +409,8 @@ li.sidebar__menu-item {
   margin-right: 10px;
 }
 
+=======
+>>>>>>> origin/main
 .home-sale-item {
   display: block;
   text-align: center;
@@ -414,6 +420,7 @@ li.sidebar__menu-item {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
 /* Product item */
 .home-product {
   margin-bottom: 10px;
@@ -603,6 +610,8 @@ i.home-product-item__like-icon-fill {
   font-weight: 600;
 }
 
+=======
+>>>>>>> origin/main
 .home-pagination,
 .cart-pagination {
   display: flex;
